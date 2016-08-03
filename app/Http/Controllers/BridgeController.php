@@ -40,6 +40,8 @@ class BridgeController extends Controller
         }
         catch(\Exception $ex) {
 
+            throw $ex;
+
             return response('Exception', 500);
 
         } 
